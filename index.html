@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <link rel="stylesheet" href="sasi.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Student Management System</h1>
+           <img class="sasi1" src="New folder/0ec9709ea7fc9c8dd414a94182f572e8.png" alt="">
+            <input type="text" id="search" placeholder="Search">
+            <button onclick="search()">Search</button>
+            
+        </header>
+        <button class="sasi2" onclick="addStudent()">+ Add Student</button>
+        <div class="student-cards" id="studentCards">
+            <!-- Sample Student Card -->
+            <div class="student-card">
+                <img src="New folder/1.png" alt="Student Photo">
+                <div class="details">
+                    <p><strong>Student Name:</strong> Kavindu Perera</p>
+                    <p><strong>Gender:</strong> Male</p>
+                    <p><strong>DOB:</strong>  03-04-2001</p>
+                    <p><strong>Address:</strong> Kalutara</p>
+                    <p><strong>Contact:</strong> 077-1234234</p>
+                    <button onclick="deleteStudent(this)">Delete</button>
+                </div>
+            </div>
+
+            <div class="student-card">
+                <img src="New folder/3.png" alt="Student Photo">
+                <div class="details">
+                    <p><strong>Student Name:</strong> Saduni silva</p>
+                    <p><strong>Gender:</strong> feMale</p>
+                    <p><strong>DOB:</strong> 20-02-2001</p>
+                    <p><strong>Address:</strong> panadura</p>
+                    <p><strong>Contact:</strong> 077-1234234</p>
+                    <button onclick="deleteStudent(this)">Delete</button>
+                </div>
+            </div>
+
+            <div class="student-card">
+                <img src="New folder/2.png" alt="Student Photo">
+                <div class="details">
+                    <p><strong>Student Name:</strong> Kasun Perera</p>
+                    <p><strong>Gender:</strong> Male</p>
+                    <p><strong>DOB:</strong> 16-10-2001</p>
+                    <p><strong>Address:</strong> wadduwa</p>
+                    <p><strong>Contact:</strong> 077-1234234</p>
+                    <button onclick="deleteStudent(this)">Delete</button>
+                </div>
+            </div>
+        </div>
+    </div>
+   
+<div class="modal" id="addStudentModal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <h2>Add Student</h2>
+        <form id="addStudentForm">
+            <label for="studentName">Student Name:</label>
+            <input type="text" id="studentName" required>
+
+            <label for="dob">DOB:</label>
+            <input type="date" id="dob" required>
+
+            <label for="address">Address:</label>
+            <input type="text" id="address" required>
+
+            <label for="contact">Contact:</label>
+            <input type="text" id="contact" required>
+
+            <button type="button" onclick="addStudent()">Add</button>
+        </form>
+    </div>
+</div>
+
+    <script  src="sasi.js"></script>
+
+    
+</body>
+</html>
